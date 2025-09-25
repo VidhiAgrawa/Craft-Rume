@@ -1,0 +1,18 @@
+*{
+    color: white;
+    font-family: "Gabriela", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body{
+    width: 100vw;
+    overflow: hidden;
+}
+#root{
+    width: 100vw;
+}
