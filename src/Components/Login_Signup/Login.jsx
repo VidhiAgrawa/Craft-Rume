@@ -1,33 +1,12 @@
 import React, { useEffect, useState } from 'react'
 import {useNavigate} from "react-router"
-import App from '../../App.jsx'
+
 import loginBlue from "../../assets/login-Blue.png"
 import man from "../../assets/man.png"
 import  leaf from "../../assets/leaf.png"
 function Login() {
   const navigate = useNavigate()
-  const [username, setUsername] = useState("");
-  const [password, setPassword] = useState("");
-  const [message, setMessage] = useState({"msg" : "" , "type" : ""});
-
-  useEffect( () => {
-    // const timeLine = gsap.timeline()
-    // timeLine.from( ".img-login-back" , {
-    //   opacity : 0,
-    //   x : 100,
-    //   duration : 1
-    // } )
-    // timeLine.from( ".man-image-login" , {
-    //   opacity : 0,
-    //   x : -10,
-    //   duration : 0.5
-    // } )
-    // timeLine.from( ".leaf-image-login" , {
-    //   opacity : 0,
-    //   duration : 0.5
-    // } )
-  } , [] )
-
+  
 
   return (
     <>
@@ -45,8 +24,6 @@ function Login() {
                   <input type="text" 
                     placeholder="Enter Username" 
                     className="loginusername" 
-                    value={username} 
-                    onChange={e => setUsername(e.target.value)} 
                   />
                 </div>
                 <div className="login-password flex">
@@ -55,9 +32,7 @@ function Login() {
                     type="password"  
                     placeholder="Enter Password" 
                     className="loginpassword" 
-                    value={password} 
-                    onChange={e => setPassword(e.target.value)} 
-                  />
+                    />
                 </div>
                 <div className="forgotPasswordSignup">
                   <div className="forgotPassword">Forgot Password <i class="fa-solid fa-question questionMark"></i></div>

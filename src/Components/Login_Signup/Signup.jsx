@@ -2,16 +2,13 @@ import React, { useEffect, useState } from 'react'
 
 import {useNavigate} from "react-router"
 import "./LoginSignup.css"
-import gsap from 'gsap';
-import App from '../../App.jsx'
+
+
 import loginBlue from "../../assets/login-Blue.png"
 import man from "../../assets/man.png"
 import  leaf from "../../assets/leaf.png"
 function Signup() {
-  const [username, setUsername] = useState("");
-  const [password, setPassword] = useState("");
-  const [identity, setIdentity] = useState("");
-  const [message, setMessage] = useState({"msg" : "" , "type" : ""});
+
 
   const navigate = useNavigate()
 
@@ -29,11 +26,11 @@ function Signup() {
               <form className="sub-detail-signup flex" >
                 <div className="sign-username flex">
                   <span>Username</span>
-                  <input type="text" placeholder="Enter Username" className="signusername" value={username} onChange={e => setUsername(e.target.value)} />
+                  <input type="text" placeholder="Enter Username" className="signusername"  />
                 </div>
                 <div className="sign-password flex">
                   <span>Password</span>
-                  <input type="password" placeholder="Enter Password" className="signpassword" value={password} onChange={e => setPassword(e.target.value)} />
+                  <input type="password" placeholder="Enter Password" className="signpassword" />
                 </div>
                 <div className="forgotPasswordSignup">
                   <div className="forgotPassword">Already a User <i class="fa-solid fa-question questionMark"></i></div>
