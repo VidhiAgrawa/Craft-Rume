@@ -1,7 +1,15 @@
 import React from 'react'
 import './Home.css'
 import fastForward from '../../assets/fast-forward.gif'
+import { useNavigate } from 'react-router'
 function Home() {
+    const navigate = useNavigate()
+    const scrollToTemplete = () => {
+        const templeteSection = document.getElementById("templete-section")
+        if (templeteSection) {
+        templeteSection.scrollIntoView({ behavior: "smooth" })
+        }
+    }
   return (
     <main className="home-main flex">
         <div className="first-heading flex">
@@ -13,7 +21,7 @@ function Home() {
             <h2>Stand out strong, land it right.</h2>
         </div>
         <div className="building-button flex">
-            <button className="build flex">
+            <button className="build flex" onClick={scrollToTemplete}>
                 <span>Build Your Resume</span>
                 <img src={fastForward} alt="" className="forward" />
             </button>

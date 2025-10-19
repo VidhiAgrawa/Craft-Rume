@@ -1,0 +1,53 @@
+.aboutus.flex {
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+}
+.about-section-portion {
+    flex-direction: column;
+    height: 50%;
+    width: 50%;
+}
+
+.blog-home {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url(/backgroundimage.png);
+    background-size: cover;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    overflow-x: hidden;
+}
+.upperPage-blog{
+    height: 100vh;
+    width: 100vw;
+    color: white;
+}
+
+.heading-blogPage {
+    text-align: center;
+    width: 100vw;
+    font-size: xxx-large;
+    margin-top: 2%;
+    color: white;
+}
+.Q_A{
+    flex-direction: column;
+    width: 100%;
+    margin: 5% 0;
+}
+.question-blog, .answer-blog {
+    width: 70%;
+    text-align: center;
+}
+.question-blog {
+    font-size: x-large;
+    margin-bottom: 1em;
+}
+
+.answer-blog , .list-blog {
+    font-size: large;
+    line-height: 1.5em;
+}

@@ -8,20 +8,28 @@
     top: 0;
     height: 100%;
     width: 65%;
-    border-bottom: 1px solid white;
     font-size: medium;
 }
 .logo {
     /* position: absolute; */
     top: 1em;
     left: 2em;
-    font-size: large;
+    /* font-size: large; */
+    height: 100%;
+    width: 10%;
+}
+img.logo-img {
+    height: 6em;
+    border-radius: 50%;
+    width: 6em;
 }
 .profile {
     /* position: absolute; */
     top: 1em;
     right: 2em;
     font-size: large;
+    height: 100%;
+    width: 5%;
 }
 .navbar-div {
     width: 85%;
@@ -29,7 +37,6 @@
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(1, 1fr);
-    font-size: large;
 }
 .moon {
     height: 1.4em;

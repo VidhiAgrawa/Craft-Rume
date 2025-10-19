@@ -2,8 +2,9 @@ import { useState } from 'react'
 import './App.css'
 import background from './assets/background.mp4'
 import Navbar from './Components/Navbar/Navbar'
-import Aboutus from './Components/AboutUs/Aboutus'
 import Home from './Components/Home/Home'
+import Aboutus from './Components/AboutUs/Aboutus'
+import Templete from './Components/Templete/Templete'
 
 function App() {
 
@@ -23,10 +24,12 @@ function App() {
         <div className="home-page flex">
           <Home/>
         </div>
-        {/* <div className="about-us-page flex">
+        <div className="about-us-page flex" id="about-us-section">
           <Aboutus/>
-        </div> */}
-        {/* <div className="steps-box flex">hello</div> */}
+        </div> 
+        <div className="steps-box flex" id="templete-section">
+          <Templete/>
+        </div>
       </main>
     </>
   )
