@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react'
 import {useNavigate} from "react-router"
 import "./LoginSignup.css"
 import gsap from 'gsap';
-
+import App from '../../App.jsx'
 import loginBlue from "../../assets/login-Blue.png"
 import man from "../../assets/man.png"
 import  leaf from "../../assets/leaf.png"
