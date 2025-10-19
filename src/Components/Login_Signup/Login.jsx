@@ -39,7 +39,7 @@ function Login() {
                   <div className="signup" onClick={() => navigate("/")}>Signup</div>
                 </div>
                 <div className="submission flex">
-                  <button className="submitting-login" type="submit" onClick={() => navigate("/app")}>Submit</button>
+                  <button className="submitting-login" type="submit" onClick={() => navigate("/home")}>Submit</button>
                 </div>
               </form>
             </section>

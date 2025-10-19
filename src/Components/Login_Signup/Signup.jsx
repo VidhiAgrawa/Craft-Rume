@@ -42,7 +42,7 @@ function Signup() {
                   <button className={`admin`} >Admin</button>
                 </div>
                 <div className="submission flex">
-                  <button className="submitting-sign" type="submit" onClick={() => navigate("/app")}>Submit</button>
+                  <button className="submitting-sign" type="submit" onClick={() => navigate("/home")}>Submit</button>
                 </div>
                 
               </form>
