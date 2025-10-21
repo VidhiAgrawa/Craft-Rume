@@ -28,7 +28,7 @@ function Navbar() {
                 <div className="home flex"><span>Home</span></div>
                 <div className="about-us flex" onClick={scrollToAboutUs}><span >About us</span></div>
                 <div className="templete flex" onClick={scrollToTemplete}><span>Templete</span></div>
-                <div className="sign-in flex" onClick={() => navigate("/")}><span>SignUp</span></div>
+                <div className="sign-in flex" onClick={() => navigate("/signup")}><span>SignUp</span></div>
                 <div className="theme flex"><img src={moon} alt="" className='moon'/></div>
             </div>
         </div>

@@ -8,10 +8,20 @@ import loginBlue from "../../assets/login-Blue.png"
 import man from "../../assets/man.png"
 import  leaf from "../../assets/leaf.png"
 function Signup() {
-
-
   const navigate = useNavigate()
 
+  const[signupUser, setsignupUser] = useState("")
+  const [signupPass, setsignupPass] = useState("");
+  
+    const handleSubmitBtn = (e) => {
+      e.preventDefault();
+  
+      if (signupUser.trim() === "" || signupPass.trim() === "") {
+        alert("Please fill details");
+        return;
+      }
+      navigate("/");
+    };
 
   return (
     <>
@@ -23,14 +33,22 @@ function Signup() {
               <section className="sub-head-sec flex">
                 <h1>Sign up</h1>
               </section>
-              <form className="sub-detail-signup flex" >
+              <form className="sub-detail-signup flex" onSubmit={handleSubmitBtn}>
                 <div className="sign-username flex">
                   <span>Username</span>
-                  <input type="text" placeholder="Enter Username" className="signusername"  />
+                  <input type="text" 
+                  placeholder="Enter Username" 
+                  className="signusername"
+                  value={signupUser}
+                  onChange={(e) => setsignupUser(e.target.value)}  />
                 </div>
                 <div className="sign-password flex">
                   <span>Password</span>
-                  <input type="password" placeholder="Enter Password" className="signpassword" />
+                  <input type="password" 
+                  placeholder="Enter Password" 
+                  className="signpassword"
+                  value={signupPass}
+                  onChange={(e) => setsignupPass(e.target.value)} />
                 </div>
                 <div className="forgotPasswordSignup">
                   <div className="forgotPassword">Already a User <i class="fa-solid fa-question questionMark"></i></div>
@@ -42,7 +60,7 @@ function Signup() {
                   <button className={`admin`} >Admin</button>
                 </div>
                 <div className="submission flex">
-                  <button className="submitting-sign" type="submit" onClick={() => navigate("/home")}>Submit</button>
+                  <button className="submitting-sign" type="submit" onClick={handleSubmitBtn}>Submit</button>
                 </div>
                 
               </form>
