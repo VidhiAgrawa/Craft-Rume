@@ -10,9 +10,9 @@ import Login from './Components/Login_Signup/Login.jsx'
 createRoot(document.getElementById('root')).render(
   <BrowserRouter>
     <Routes>
-      <Route path="/" element={<Signup/>}></Route>
+      <Route path="/signup" element={<Signup/>}></Route>
       <Route path="/aboutus" element={<Aboutus/>}/>
-      <Route path="/home" element={<App/>}></Route>
+      <Route path="/" element={<App/>}></Route>
       <Route path="/login" element={<Login/>}></Route>
     </Routes>
   </BrowserRouter>,
