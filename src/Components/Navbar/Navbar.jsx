@@ -32,7 +32,7 @@ function Navbar() {
                 <div className="theme flex"><img src={moon} alt="" className='moon'/></div>
             </div>
         </div>
-        <div className="profile flex" ><i className="fa-solid fa-user"></i></div>
+        <div className="profile flex" onClick={() => alert("Profile Section is under service")}><i className="fa-solid fa-user"></i></div>
 
     </main>
     
