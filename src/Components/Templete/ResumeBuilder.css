@@ -1,0 +1,122 @@
+/* ResumeBuilder.css */
+
+/* The Main Container - Matches your fluid blue/black image */
+.builder-container {
+    display: flex;
+    color: #e6f1ff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 95%;
+}
+
+/* --- LEFT SIDE: THE EDITOR --- */
+.editor-panel {
+    width: 40%;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+    overflow-y: auto;
+    height: 106vh;
+}
+
+
+
+.editor-title {
+  font-size: 2rem;
+  margin-bottom: 2em;
+  font-weight: bold;
+}
+
+/* Inputs styled for Dark Mode */
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #8892b0;
+  font-size: 0.9rem;
+}
+
+.dark-input, .dark-textarea, .dark-select
+ {
+    width: 100%;
+    padding-left: 12px;
+    background-color: #112240;
+    border: 1px solid #233554;
+    color: #ccd6f6;
+    border-radius: 6px;
+    outline: none;
+    transition: 0.3s;
+    height: 4em;
+}
+
+.dark-input:focus, .dark-textarea:focus {
+  border-color: #64ffda;
+  box-shadow: 0 0 5px rgba(100, 255, 218, 0.2);
+}
+
+/* Buttons */
+.btn-download {
+  width: 100%;
+  padding: 15px;
+  margin-top: 20px;
+  background: linear-gradient(90deg, #00c6ff 0%, #0072ff 100%);
+  border: none;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.btn-download:hover {
+  transform: scale(1.02);
+  box-shadow: 0 5px 15px rgba(0, 114, 255, 0.4);
+}
+
+/* --- RIGHT SIDE: THE PREVIEW --- */
+.preview-panel {
+  background-color: #020c1b;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  overflow-y: auto;
+  height: 110vh;
+  
+  /* 🦊 For Firefox */
+  scrollbar-width: none; 
+  
+  /* 🧭 For IE and Edge */
+  -ms-overflow-style: none;  
+}
+
+/* 🌐 For Chrome, Safari, and Opera */
+.preview-panel::-webkit-scrollbar {
+  display: none;
+}
+/* The A4 Paper Logic */
+.a4-page {
+  width: 100%;
+  min-height: 297mm;
+  background: white;
+  color: black;
+
+}
+.heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    margin-top: 5em;
+}
+.previewDiv {
+    padding: 1em;
+    height: 97%;
+    width: 60%;
+    background: #020b19;
+}

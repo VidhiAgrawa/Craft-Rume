@@ -4,7 +4,7 @@ import background from './assets/background.mp4'
 import Navbar from './Components/Navbar/Navbar'
 import Home from './Components/Home/Home'
 import Aboutus from './Components/AboutUs/Aboutus'
-import Templete from './Components/Templete/Templete'
+import ResumeBuilder from './Components/Templete/ResumeBuilder'
 
 function App() {
 
@@ -28,7 +28,7 @@ function App() {
           <Aboutus/>
         </div> 
         <div className="steps-box flex" id="templete-section">
-          <Templete/>
+          <ResumeBuilder/>
         </div>
       </main>
     </>
