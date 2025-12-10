@@ -1,6 +1,6 @@
 # Craft-Rume 🎨 <br>
 
-A modern React + Vite web application showcasing beautiful UI/UX — a creative project to explore frontend development, design ideas, and component-based architecture. <br>
+A modern React + Vite web application showcasing beautiful UI/UX — a creative project to create your Resumes. <br>
 
 --- <br>
 
