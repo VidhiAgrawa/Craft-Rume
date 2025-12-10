@@ -39,15 +39,15 @@ Craft-Rume/ <br>
 
 ### Installation <br>
 
-git clone https://github.com/VidhiAgrawa/Craft-Rume.git <br>
-cd Craft-Rume <br>
-npm install <br>
+- git clone https://github.com/VidhiAgrawa/Craft-Rume.git <br>
+- cd Craft-Rume <br>
+- npm install <br>
 
 --- <br>
 
 ### Run the Development Server <br>
 
-npm run dev <br>
+- npm run dev <br>
 
 This will start the app in development mode with hot module reload. <br>
 Open your browser at **http://localhost:5173** (or the port shown in terminal). <br>
@@ -56,8 +56,8 @@ Open your browser at **http://localhost:5173** (or the port shown in terminal). 
 
 ## 🙋 Author <br>
 
-**Vidhi Agrawal** <br>
-GitHub: [VidhiAgrawa](https://github.com/VidhiAgrawa) <br>
+- **Vidhi Agrawal** <br>
+- GitHub: [VidhiAgrawa](https://github.com/VidhiAgrawa) <br>
 
 --- <br>
 
